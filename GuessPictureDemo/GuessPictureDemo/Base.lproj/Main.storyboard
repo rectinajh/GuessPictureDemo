@@ -20,7 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kkh-2Q-OxW">
                                 <rect key="frame" x="0.0" y="98" width="69" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left"/>
+                                <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left">
+                                    <color key="titleColor" red="1" green="0.91382390171955108" blue="0.91610157410325088" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <state key="highlighted" backgroundImage="btn_left_highlighted"/>
                                 <connections>
                                     <action selector="tip" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpz-Z6-YZQ"/>
@@ -33,7 +35,6 @@
                                 <state key="highlighted" backgroundImage="btn_right_highlighted"/>
                                 <connections>
                                     <action selector="nextQuestion" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHK-jV-qvI"/>
-                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agn-qz-PVM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUN-yW-e5e">
@@ -86,11 +87,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="BCe-aJ-AjW">
+                                <rect key="frame" x="0.0" y="298" width="320" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="F5Y-CH-3Dq">
                                 <rect key="frame" x="0.0" y="247" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.101163241339284" blue="0.139420211729673" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.16664930285871093" blue="0.099831195105720361" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -101,6 +104,8 @@
                         <outlet property="iconBtn" destination="CTu-lo-ayT" id="KP6-Rv-57T"/>
                         <outlet property="nextQuestionBtn" destination="KJq-nR-Lio" id="nm8-aU-DKY"/>
                         <outlet property="noLabel" destination="MUN-yW-e5e" id="hOm-Ba-sh1"/>
+                        <outlet property="optionView" destination="BCe-aJ-AjW" id="tmx-1V-7Js"/>
+                        <outlet property="scoreBtn" destination="tjM-uv-voS" id="7nD-Ng-BR6"/>
                         <outlet property="titleLabel" destination="ATZ-ys-ySp" id="g1L-22-iOf"/>
                     </connections>
                 </viewController>
