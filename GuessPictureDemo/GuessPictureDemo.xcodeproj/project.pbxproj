@@ -15,6 +15,8 @@
 		E945C8061B728C73005AA4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E945C8041B728C73005AA4FB /* LaunchScreen.storyboard */; };
 		E945C8111B728C73005AA4FB /* GuessPictureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E945C8101B728C73005AA4FB /* GuessPictureDemoTests.m */; };
 		E945C81C1B728C73005AA4FB /* GuessPictureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E945C81B1B728C73005AA4FB /* GuessPictureDemoUITests.m */; };
+		E945C82A1B728D7E005AA4FB /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = E945C8291B728D7E005AA4FB /* questions.plist */; };
+		E963D2131B72D9010095BF68 /* JHQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E963D2121B72D9010095BF68 /* JHQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		E945C8171B728C73005AA4FB /* GuessPictureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessPictureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E945C81B1B728C73005AA4FB /* GuessPictureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuessPictureDemoUITests.m; sourceTree = "<group>"; };
 		E945C81D1B728C73005AA4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E945C8291B728D7E005AA4FB /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		E963D2111B72D9010095BF68 /* JHQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHQuestion.h; sourceTree = "<group>"; };
+		E963D2121B72D9010095BF68 /* JHQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,8 @@
 				E945C7FA1B728C73005AA4FB /* AppDelegate.m */,
 				E945C7FC1B728C73005AA4FB /* ViewController.h */,
 				E945C7FD1B728C73005AA4FB /* ViewController.m */,
+				E963D2111B72D9010095BF68 /* JHQuestion.h */,
+				E963D2121B72D9010095BF68 /* JHQuestion.m */,
 				E945C7FF1B728C73005AA4FB /* Main.storyboard */,
 				E945C8021B728C73005AA4FB /* Assets.xcassets */,
 				E945C8041B728C73005AA4FB /* LaunchScreen.storyboard */,
@@ -117,6 +124,7 @@
 		E945C7F61B728C73005AA4FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E945C8291B728D7E005AA4FB /* questions.plist */,
 				E945C7F71B728C73005AA4FB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E945C82A1B728D7E005AA4FB /* questions.plist in Resources */,
 				E945C8061B728C73005AA4FB /* LaunchScreen.storyboard in Resources */,
 				E945C8031B728C73005AA4FB /* Assets.xcassets in Resources */,
 				E945C8011B728C73005AA4FB /* Main.storyboard in Resources */,
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E945C7FE1B728C73005AA4FB /* ViewController.m in Sources */,
+				E963D2131B72D9010095BF68 /* JHQuestion.m in Sources */,
 				E945C7FB1B728C73005AA4FB /* AppDelegate.m in Sources */,
 				E945C7F81B728C73005AA4FB /* main.m in Sources */,
 			);
@@ -498,6 +508,7 @@
 				E945C8221B728C73005AA4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E945C8231B728C73005AA4FB /* Build configuration list for PBXNativeTarget "GuessPictureDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				E945C8251B728C73005AA4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E945C8261B728C73005AA4FB /* Build configuration list for PBXNativeTarget "GuessPictureDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				E945C8281B728C73005AA4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
